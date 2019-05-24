@@ -51,7 +51,7 @@ export default function RadialChart(props) {
 
   return (
     <svg aria-label={ariaLabel} role="img" width={width} height={height}>
-      <Group top={height / 2 - completeMargin.top} left={width / 2 + margin.left}>
+      <Group top={height / 2} left={width / 2}>
         {React.Children.map(children, Child =>
           React.cloneElement(Child, {
             onMouseMove: Child.props.onMouseMove || onMouseMove,
